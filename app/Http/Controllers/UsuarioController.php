@@ -35,6 +35,17 @@ class UsuarioController extends Controller {
             $V = Contato::all();
         }
 
+        //Busca informação atráves da chave primária
+        if(strcmp($modo, 'find') == 0){
+            $row = Contato::find(3);
+            echo $row ['name'].', '.$row['subject'].'<br>';
+            return;
+        }
+
+        if(strcmp($modo, 'where') == 0){
+            $V = Contato::where('id', '>', 2);
+        }
+
         foreach ($V as $row){
             echo $row ['name'].', '.$row['subject'].'<br>';
         }
