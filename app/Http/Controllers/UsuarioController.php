@@ -43,7 +43,7 @@ class UsuarioController extends Controller {
         }
 
         if(strcmp($modo, 'where') == 0){
-            $V = Contato::where('id', '>', 2);
+            $V = Contato::where('id', '>', 2)->get();
         }
 
         foreach ($V as $row){
