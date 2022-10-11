@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit2f6cb28a8a48d744d02a0c38c0bdee76
+class ComposerStaticIniteba033378b60bc86632112781b6a229b
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -501,7 +501,11 @@ class ComposerStaticInit2f6cb28a8a48d744d02a0c38c0bdee76
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Helpers\\DataBuilders\\ImageCardDataBuilder' => __DIR__ . '/../..' . '/app/Helpers/DataBuilders/ImageCardDataBuilder.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\JumboController' => __DIR__ . '/../..' . '/app/Http/Controllers/JumboController.php',
+        'App\\Http\\Controllers\\UsuarioController' => __DIR__ . '/../..' . '/app/Http/Controllers/UsuarioController.php',
+        'App\\Http\\Controllers\\VendasController' => __DIR__ . '/../..' . '/app/Http/Controllers/VendasController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -512,7 +516,15 @@ class ComposerStaticInit2f6cb28a8a48d744d02a0c38c0bdee76
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\ValidateSignature' => __DIR__ . '/../..' . '/app/Http/Middleware/ValidateSignature.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Libraries\\Cards\\ImageCard' => __DIR__ . '/../..' . '/app/Libraries/Cards/ImageCard.php',
+        'App\\Models\\BreadCrumbModel' => __DIR__ . '/../..' . '/app/Models/BreadCrumbModel.php',
+        'App\\Models\\Contato' => __DIR__ . '/../..' . '/app/Models/Contato.php',
+        'App\\Models\\Nome' => __DIR__ . '/../..' . '/app/Models/Nome.php',
+        'App\\Models\\NomeModel' => __DIR__ . '/../..' . '/app/Models/NomeModel.php',
+        'App\\Models\\Pessoa' => __DIR__ . '/../..' . '/app/Models/Pessoa.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Models\\UsuarioModel' => __DIR__ . '/../..' . '/app/Models/UsuarioModel.php',
+        'App\\Models\\VendasModel' => __DIR__ . '/../..' . '/app/Models/VendasModel.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -624,8 +636,10 @@ class ComposerStaticInit2f6cb28a8a48d744d02a0c38c0bdee76
         'Cron\\HoursField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/HoursField.php',
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
+        'Database\\Factories\\PessoaFactory' => __DIR__ . '/../..' . '/database/factories/PessoaFactory.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
+        'Database\\Seeders\\PessoaSeeder' => __DIR__ . '/../..' . '/database/seeders/PessoaSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
         'DeepCopy\\Exception\\PropertyException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',
@@ -5572,10 +5586,10 @@ class ComposerStaticInit2f6cb28a8a48d744d02a0c38c0bdee76
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit2f6cb28a8a48d744d02a0c38c0bdee76::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit2f6cb28a8a48d744d02a0c38c0bdee76::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit2f6cb28a8a48d744d02a0c38c0bdee76::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit2f6cb28a8a48d744d02a0c38c0bdee76::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticIniteba033378b60bc86632112781b6a229b::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticIniteba033378b60bc86632112781b6a229b::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticIniteba033378b60bc86632112781b6a229b::$prefixesPsr0;
+            $loader->classMap = ComposerStaticIniteba033378b60bc86632112781b6a229b::$classMap;
 
         }, null, ClassLoader::class);
     }
