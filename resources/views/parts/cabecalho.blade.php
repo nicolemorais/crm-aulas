@@ -11,5 +11,6 @@
             <link rel="stylesheet" href="{{ asset('mdb/css/bootstrap.min.css') }}">
             <link rel="stylesheet" href="{{ asset('mdb/css/mdb.min.css') }}">
             <link rel="stylesheet" href="{{ asset('mdb/css/style.css') }}">
-        </head>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet"/>
 <body>
